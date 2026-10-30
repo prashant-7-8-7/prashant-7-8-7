@@ -24,37 +24,22 @@ def start(width, height, title, desc, p):
 
 
 def header(p):
-    s = start(1120, 410, "Prashant Sharma | AI & ML", "AI and ML undergraduate at MITS Gwalior. Building useful, understandable, and testable AI systems. Abstract neural connections animate gently on the right; all text remains visible with motion disabled.", p)
-    s += f'''<rect x="720" y="1" width="380" height="408" fill="url(#grid)"/>
-<circle cx="942" cy="195" r="210" fill="url(#halo)"/>
+    s = start(740, 410, "Prashant Sharma | AI & ML", "AI and ML undergraduate at MITS Gwalior. Building useful, understandable, and testable AI systems. A separate student-at-laptop animation accompanies this introduction.", p)
+    s += f'''<rect x="540" y="1" width="180" height="408" fill="url(#grid)"/>
+<circle cx="682" cy="195" r="210" fill="url(#halo)"/>
 <path d="M48 41H76" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
 <text x="88" y="45" fill="{p['muted']}" font-size="13" letter-spacing="2.2" class="mono">PRASHANT / 787</text>
-<circle cx="887" cy="41" r="4" fill="{p['green']}" class="pulse"/>
-<text x="900" y="46" fill="{p['muted']}" font-size="12" letter-spacing="1.1" class="mono">LEARNING. BUILDING.</text>
 <text x="47" y="135" fill="{p['text']}" font-size="61" font-weight="750" letter-spacing="-2.2">Prashant Sharma</text>
 <text x="49" y="180" fill="{p['muted']}" font-size="22">AI &amp; ML undergraduate · MITS Gwalior</text>
 <path d="M49 215H113" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
 <text x="48" y="260" fill="{p['text']}" font-size="28" font-weight="500">Building AI that is useful,</text>
 <text x="48" y="299" fill="{p['cyan']}" font-size="28" font-weight="500">understandable, and testable.</text>
 <text x="49" y="365" fill="{p['muted']}" font-size="12" letter-spacing="1.6" class="mono">PYTHON / MACHINE LEARNING / AI SYSTEMS</text>
-<path d="M749 81V330" stroke="{p['line']}" stroke-width="1"/>
-<circle cx="925" cy="190" r="113" fill="none" stroke="{p['line']}"/>
-<circle cx="925" cy="190" r="137" fill="none" stroke="{p['line']}" stroke-dasharray="2 12"/>
-<g class="orbit"><circle cx="925" cy="77" r="4" fill="{p['cyan']}"/><circle cx="925" cy="303" r="3" fill="{p['violet']}"/></g>
+<circle cx="659" cy="41" r="4" fill="{p['green']}" class="pulse"/>
+<circle cx="679" cy="41" r="4" fill="{p['cyan']}" class="pulse"/>
+<circle cx="699" cy="41" r="4" fill="{p['violet']}" class="pulse"/>
 '''
-    layers = [[(829, 138), (829, 190), (829, 242)], [(925, 110), (925, 164), (925, 218), (925, 272)], [(1021, 164), (1021, 218)]]
-    for a, b in zip(layers, layers[1:]):
-        for x1, y1 in a:
-            for x2, y2 in b:
-                s += f'<path d="M{x1} {y1}L{x2} {y2}" fill="none" stroke="{p["line"]}" stroke-width="1.3"/>\n'
-    for points in ["M829 138L925 164L1021 218", "M829 242L925 218L1021 164", "M829 190L925 110"]:
-        s += f'<path d="{points}" fill="none" stroke="url(#accent)" stroke-width="2" class="signal"/>\n'
-    for i, layer in enumerate(layers):
-        for j, (x, y) in enumerate(layer):
-            color = p["cyan"] if (i+j) % 2 == 0 else p["violet"]
-            s += f'<circle cx="{x}" cy="{y}" r="9" fill="{p["panel"]}" stroke="{color}" stroke-width="1.5"/><circle cx="{x}" cy="{y}" r="3" fill="{color}" class="pulse" style="animation-delay:{j}s"/>\n'
-    s += f'<text x="925" y="365" text-anchor="middle" fill="{p["muted"]}" class="mono" font-size="11" letter-spacing="2.2">IDEA → EXPERIMENT → APPLICATION</text>\n</svg>\n'
-    return s
+    return s + '</svg>\n'
 
 
 def footer(p):
@@ -67,12 +52,8 @@ def footer(p):
 </svg>\n'''
 
 
-def pending(p, snake=False):
-    height = 110 if snake else 220
-    label = "Contribution animation" if snake else "GitHub activity"
-    s = start(1120, height, label, "Awaiting the first successful GitHub Actions run. No sample statistics are displayed.", p)
-    if snake:
-        return s + f'<text x="32" y="61" fill="{p["muted"]}" font-size="18">Contribution animation appears after the first successful refresh.</text></svg>\n'
+def pending(p):
+    s = start(1120, 220, "GitHub activity", "Awaiting the first successful GitHub Actions run. No sample statistics are displayed.", p)
     return s + f'''<text x="32" y="53" fill="{p['text']}" font-size="26" font-weight="650">Consistency, in motion.</text>
 <text x="32" y="94" fill="{p['muted']}" font-size="18">A snapshot of my GitHub contribution calendar.</text>
 <path d="M32 128H1088" stroke="{p['line']}"/>
@@ -87,10 +68,10 @@ def main():
         (ASSETS / f"header-{theme}.svg").write_text(header(p), encoding="utf-8")
         (ASSETS / f"footer-{theme}.svg").write_text(footer(p), encoding="utf-8")
         # Never replace actual generated activity when rebuilding the branding.
-        for label, snake in [("activity", False), ("snake", True)]:
+        for label in ["activity"]:
             path = ASSETS / f"{label}-{theme}.svg"
             if not path.exists():
-                path.write_text(pending(p, snake), encoding="utf-8")
+                path.write_text(pending(p), encoding="utf-8")
 
 
 if __name__ == "__main__":
