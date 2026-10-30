@@ -4,11 +4,9 @@ on:
   schedule:
     - cron: '17 0 * * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [contribution-push]
   push:
-    branches: [main]
-    paths:
-      - '.github/workflows/profile-assets.yml'
-      - 'scripts/**'
 
 permissions:
   contents: read
@@ -26,6 +24,7 @@ jobs:
       - name: Check out profile source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: main
           persist-credentials: false
 
       - name: Render actual contribution summary
@@ -34,27 +33,34 @@ jobs:
           PROFILE_USERNAME: ${{ github.repository_owner }}
         run: python3 scripts/generate_activity.py
 
-      - name: Generate contribution snake
-        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            assets/snake-dark.svg?palette=github-dark&color_snake=#b5a1ff&color_dots=#151f32,#164356,#17687c,#249db0,#67e8f9
-            assets/snake-light.svg?palette=github-light&color_snake=#6d49ca&color_dots=#edf0fa,#c2e4ec,#83c8d8,#339db6,#087e94
+      - name: Generate Yoshi's animated 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # verified latest branch, Node 24
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: scripts/3d-settings.json
 
-      - name: Validate generated SVGs
+      - name: Prepare and validate generated SVGs
         run: |
-          python3 - <<'PY'
+          python3 - <<'PYCODE'
           from pathlib import Path
+          import shutil
           import xml.etree.ElementTree as ET
-          names = ['activity-dark.svg', 'activity-light.svg', 'snake-dark.svg', 'snake-light.svg']
+          for theme in ('dark', 'light'):
+              shutil.copyfile(
+                  Path('profile-3d-contrib') / f'contributions-3d-{theme}.svg',
+                  Path('assets') / f'contributions-3d-{theme}.svg',
+              )
+          names = ['activity-dark.svg', 'activity-light.svg', 'contributions-3d-dark.svg', 'contributions-3d-light.svg']
           for name in names:
               path = Path('assets') / name
               root = ET.parse(path).getroot()
               assert root.tag == '{http://www.w3.org/2000/svg}svg', name
               assert not root.findall('.//{http://www.w3.org/2000/svg}script'), name
-          print('All four generated SVGs are valid.')
-          PY
+              if name.startswith('contributions-3d'):
+                  assert len(root.findall('.//{http://www.w3.org/2000/svg}rect')) > 365, name
+          print('All four generated SVGs are valid; 3D calendars contain real calendar geometry.')
+          PYCODE
 
       - name: Transfer generated visuals
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -62,7 +68,7 @@ jobs:
           name: profile-visuals
           path: |
             assets/activity-*.svg
-            assets/snake-*.svg
+            assets/contributions-3d-*.svg
           if-no-files-found: error
           retention-days: 1
 
@@ -89,9 +95,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- assets/activity-dark.svg assets/activity-light.svg assets/snake-dark.svg assets/snake-light.svg
+          git add -- assets/activity-dark.svg assets/activity-light.svg assets/contributions-3d-dark.svg assets/contributions-3d-light.svg
+          git rm --ignore-unmatch assets/snake-dark.svg assets/snake-light.svg
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m 'chore: refresh profile contribution visuals [skip ci]'
+          git commit -m 'chore: refresh profile 3D contribution visuals [skip ci]'
           git push origin HEAD:main
