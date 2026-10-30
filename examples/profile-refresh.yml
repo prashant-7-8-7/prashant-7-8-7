@@ -1,0 +1,25 @@
+# Copy this file to .github/workflows/profile-refresh.yml in another owned repository.
+# First add PROFILE_REFRESH_TOKEN as an Actions secret there. See PROFILE_GUIDE.md.
+name: Refresh Prashant's profile after a push
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  notify:
+    if: github.repository_owner == 'prashant-7-8-7'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Request a fresh 3D contribution calendar
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo 'Add PROFILE_REFRESH_TOKEN: a fine-grained token with Actions write access to prashant-7-8-7/prashant-7-8-7 only.' >&2
+            exit 1
+          fi
+          gh api --method POST repos/prashant-7-8-7/prashant-7-8-7/actions/workflows/profile-assets.yml/dispatches -f ref=main
