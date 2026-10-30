@@ -5,6 +5,22 @@
 </picture>
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/focus-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/focus-light.svg" />
+    <img src="assets/focus-dark.svg" alt="AI & ML student. Practical builder. Exploring trustworthy AI and retrieval. Learning by building and testing." width="88%" />
+  </picture>
+</p>
+
+<p align="center">
+  <a href="https://in.linkedin.com/in/prashant-sharma-040ab0388"><img src="assets/contact-linkedin.svg" alt="Connect with Prashant Sharma on LinkedIn" height="44" /></a>
+  &nbsp;
+  <a href="https://dev.to/prashant_97e6d2c6314b6895"><img src="assets/contact-dev.svg" alt="Visit Prashant Sharma on DEV Community" height="44" /></a>
+  &nbsp;
+  <a href="mailto:prashantsh787@gmail.com"><img src="assets/contact-email.svg" alt="Email Prashant Sharma at prashantsh787@gmail.com" height="44" /></a>
+</p>
+
+<p align="center">
   <a href="#selected-work">Selected work</a> &nbsp; / &nbsp;
   <a href="#toolbox">Toolbox</a> &nbsp; / &nbsp;
   <a href="#github-activity">Activity</a> &nbsp; / &nbsp;
@@ -17,7 +33,22 @@ I'm **Prashant**, an AI & ML undergraduate at **MITS Gwalior, India**, working t
 
 My current interests are **trustworthy AI, retrieval systems, and applied machine learning**. I'm learning by building, checking what works, and documenting the limitations along the way.
 
-> **Currently building · CatalogLink** — explainable product matching across supplier catalogs, starting with laptops.
+<table>
+<tr>
+<td width="34%" valign="top">
+<strong>🔭 Building</strong>
+<p><b>CatalogLink</b><br />Explainable product matching across supplier catalogs, starting with laptops.</p>
+</td>
+<td width="33%" valign="top">
+<strong>🌱 Learning</strong>
+<p>DSA foundations, model evaluation, and better retrieval systems.</p>
+</td>
+<td width="33%" valign="top">
+<strong>🤝 Open to</strong>
+<p>AI/ML internships, student collaborations, and open-source contributions.</p>
+</td>
+</tr>
+</table>
 
 ## Selected work
 
@@ -56,6 +87,24 @@ My current interests are **trustworthy AI, retrieval systems, and applied machin
 
 Tools I use in projects and coursework:
 
+<p align="center">
+  <img src="assets/tool-python.svg" alt="Python" height="34" />
+  <img src="assets/tool-cplusplus.svg" alt="C++" height="34" />
+  <img src="assets/tool-javascript.svg" alt="JavaScript" height="34" />
+  <img src="assets/tool-sqlite.svg" alt="SQLite" height="34" />
+  <img src="assets/tool-scikitlearn.svg" alt="scikit-learn" height="34" />
+  <img src="assets/tool-pandas.svg" alt="pandas" height="34" />
+  <img src="assets/tool-numpy.svg" alt="NumPy" height="34" />
+  <img src="assets/tool-fastapi.svg" alt="FastAPI" height="34" />
+  <img src="assets/tool-streamlit.svg" alt="Streamlit" height="34" />
+  <img src="assets/tool-git.svg" alt="Git" height="34" />
+  <img src="assets/tool-github.svg" alt="GitHub" height="34" />
+  <img src="assets/tool-flutter.svg" alt="Flutter" height="34" />
+</p>
+
+<details>
+<summary><b>Explore the toolbox</b></summary>
+
 | Area | Tools |
 | :--- | :--- |
 | **Languages** | Python · C++ · JavaScript · SQL |
@@ -63,7 +112,33 @@ Tools I use in projects and coursework:
 | **AI applications** | Retrieval-augmented generation · Ollama · Streamlit |
 | **Backend & interfaces** | FastAPI · SQLite · HTML · CSS · Git & GitHub |
 
-**Learning next:** stronger DSA foundations, model evaluation, better retrieval, and reliable backend systems.
+</details>
+
+<details>
+<summary><b>🧪 Inside my local AI lab</b></summary>
+
+I build and test prototypes on my own laptop:
+
+| Component | My setup |
+| :--- | :--- |
+| Memory | 16 GB RAM |
+| GPU | NVIDIA RTX 3050 |
+| GPU memory | 6 GB VRAM |
+| Approach | Local inference experiments and free or open-source tools |
+
+My aim is to make small, useful systems that I can run, inspect, and improve. I'm strengthening the fundamentals behind them: algorithms, databases, model evaluation, and reliable APIs.
+
+</details>
+
+<details>
+<summary><b>🛠️ How I approach a project</b></summary>
+
+1. Start with a focused problem and a working baseline.
+2. Connect model outputs to an interface people can use.
+3. Inspect evidence, edge cases, and failure modes.
+4. Measure what works and document what still needs improvement.
+
+</details>
 
 ## GitHub activity
 
@@ -85,9 +160,12 @@ Tools I use in projects and coursework:
 
 ## Let's connect
 
-I'm interested in **AI/ML internships, student collaborations, and open-source projects** where I can learn and contribute. Explore the repositories above to see what I'm working on.
+Have an internship opportunity, a project idea, or feedback on my work? I'd like to hear from you.
 
 <p align="center">
+  <a href="https://in.linkedin.com/in/prashant-sharma-040ab0388">Connect on LinkedIn ↗</a> &nbsp; · &nbsp;
+  <a href="https://dev.to/prashant_97e6d2c6314b6895">Notes & experiments on DEV ↗</a><br />
+  <a href="mailto:prashantsh787@gmail.com">✉ prashantsh787@gmail.com</a><br /><br />
   <a href="https://github.com/prashant-7-8-7?tab=repositories">Explore my repositories ↗</a>
 </p>
 

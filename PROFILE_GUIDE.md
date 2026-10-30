@@ -15,7 +15,9 @@ The profile appears after the root `README.md` is committed. The first workflow 
 - Edit `README.md` for your introduction, project descriptions, tools, and links.
 - Edit `scripts/build_brand.py` for the banner/footer text, palette, or animation. Run `python scripts/build_brand.py` to regenerate the branding. Existing live activity images are preserved.
 - Add a verified CatalogLink repository link once it is public. The current profile intentionally labels it as in development.
-- Add your preferred professional email or verified LinkedIn URL when you want them published. Neither is guessed or taken from private account data.
+- LinkedIn, DEV, and the email address in `README.md` were supplied for public display. Edit their `<a href="...">` destinations in the top contact row and the final contact section when needed.
+- Run `python scripts/enhance_profile.py` to rebuild the self-hosted social buttons, technology badges, and typing ribbon. The artwork sources are checked into `scripts/icon_sources.json` under CC0-1.0.
+- A Dribbble link must point to the public username page. Do not use `/account`, which opens private settings.
 
 ## Activity refresh
 
@@ -36,9 +38,14 @@ GitHub may disable scheduled workflows in a public repository after an extended 
 | `README.md` | Public profile overview |
 | `assets/header-*.svg` | Original animated introduction, light/dark |
 | `assets/footer-*.svg` | Original animated closing line, light/dark |
+| `assets/focus-*.svg` | Original typing ribbon with a reduced-motion fallback |
+| `assets/contact-*.svg` | LinkedIn, DEV, and email icon buttons |
+| `assets/tool-*.svg` | Technology badges with recognizable logos |
 | `assets/activity-*.svg` | Real contribution summary, generated daily |
 | `assets/snake-*.svg` | Contribution snake, generated daily |
 | `scripts/build_brand.py` | Rebuild original SVG branding |
 | `scripts/generate_activity.py` | Fetch and render the real calendar |
+| `scripts/enhance_profile.py` | Rebuild social buttons, badges, and typing ribbon |
+| `scripts/icon_sources.json` | Checked-in CC0 icon sources |
 | `.github/workflows/profile-assets.yml` | Generate and publish activity images |
 | `SOURCES.md` | Credits and data notes |
