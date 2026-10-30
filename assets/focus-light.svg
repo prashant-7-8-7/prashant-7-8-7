@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="56" viewBox="0 0 880 56" role="img" aria-labelledby="title desc">
+<title id="title">Prashant&#x27;s current focus</title><desc id="desc">Rotating focus: AI and ML student; trustworthy AI and retrieval; learning by building and testing. With reduced motion enabled, the first line remains visible.</desc>
+<style>
+.mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace;font-size:22px}
+.line{opacity:0}.one{opacity:1;animation:first 15s linear infinite}.two{animation:second 15s linear infinite}.three{animation:third 15s linear infinite}
+.typed{animation:type 5s steps(38,end) infinite}
+@keyframes type{0%,4%{width:0}28%,76%{width:760px}96%,100%{width:0}}
+@keyframes first{0%,32%{opacity:1}33%,100%{opacity:0}}
+@keyframes second{0%,32%{opacity:0}33%,65%{opacity:1}66%,100%{opacity:0}}
+@keyframes third{0%,65%{opacity:0}66%,99%{opacity:1}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.line,.typed{animation:none!important}.line{opacity:0}.one{opacity:1}.typed{width:760px}}
+</style>
+<defs><clipPath id="typing"><rect x="50" y="5" width="760" height="46" class="typed"/></clipPath></defs>
+<rect x=".5" y=".5" width="879" height="55" rx="11" fill="#f5f7ff" stroke="#cbd5ed"/>
+<text x="20" y="35" class="mono" fill="#157b55">&gt;</text>
+<g clip-path="url(#typing)">
+<text x="50" y="35" class="mono line one" fill="#087e94">AI &amp; ML student. Practical builder.</text>
+<text x="50" y="35" class="mono line two" fill="#6d49ca">Exploring trustworthy AI and retrieval.</text>
+<text x="50" y="35" class="mono line three" fill="#157b55">Learning by building and testing.</text>
+</g>
+</svg>

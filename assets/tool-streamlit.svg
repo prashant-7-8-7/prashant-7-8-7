@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114" height="34" viewBox="0 0 114 34" role="img" aria-labelledby="title desc">
+<title id="title">Streamlit</title><desc id="desc">Streamlit — used in projects or coursework; this badge does not represent a proficiency score.</desc>
+<rect x=".5" y=".5" width="113" height="33" rx="9" fill="#101a30" stroke="#33415e"/>
+<g transform="translate(11 7) scale(0.83333)" fill="#ff7a86"><path d="M16.673 11.32l6.862-3.618c.233-.136.554.12.442.387L20.463 17.1zm-8.556-.229l3.473-5.187c.203-.328.578-.316.793-.028l7.886 11.75zm-3.375 7.25c-.28 0-.835-.284-.993-.716l-3.72-9.46c-.118-.331.139-.614.48-.464l19.474 10.306c-.149.147-.453.337-.72.334z"/></g><text x="40" y="22" fill="#f1f5ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="550">Streamlit</text>
+</svg>
