@@ -101,4 +101,12 @@ jobs:
             exit 0
           fi
           git commit -m 'chore: refresh profile 3D contribution visuals [skip ci]'
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          echo 'Could not publish after concurrent changes; previous graphics remain available.' >&2
+          exit 1
