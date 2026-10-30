@@ -1,8 +1,18 @@
+<table>
+<tr>
+<td width="65%" valign="middle">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg" />
   <img src="assets/header-dark.svg" alt="Prashant Sharma — AI and ML undergraduate at MITS Gwalior. Building useful, understandable, and testable AI systems." width="100%" />
 </picture>
+</td>
+<td width="35%" align="center" valign="middle">
+<img src="assets/student-laptop.gif" alt="An animated student working at a laptop, with code symbols appearing above his desk." width="320" />
+<p><sub><b>LEARN · BUILD · REPEAT</b></sub></p>
+</td>
+</tr>
+</table>
 
 <p align="center">
   <picture>
@@ -151,12 +161,12 @@ My aim is to make small, useful systems that I can run, inspect, and improve. I'
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/snake-light.svg" />
-  <img src="assets/snake-dark.svg" alt="An animated snake moves through my GitHub contribution calendar." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-3d-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/contributions-3d-light.svg" />
+  <img src="assets/contributions-3d-dark.svg" alt="My real GitHub contribution calendar in 3D, with animated growing columns, contribution breakdown, and repository language distribution." width="100%" />
 </picture>
 
-<p align="center"><sub>Real contribution data · refreshed daily with GitHub Actions · snake by <a href="https://github.com/Platane/snk">Platane</a></sub></p>
+<p align="center"><sub>Real contribution data · generated with <a href="https://github.com/yoshi389111/github-profile-3d-contrib">Yoshi's 3D Contrib</a> · <a href="PROFILE_GUIDE.md#activity-refresh">refresh details</a></sub></p>
 
 ## Let's connect
 
