@@ -44,10 +44,10 @@ My current interests are **trustworthy AI, retrieval systems, and applied machin
 <p><sub>Python · Regression · Zoho QuickML · Catalyst AppSail</sub></p>
 </td>
 <td width="50%" valign="top">
-<sub>04 / IN DEVELOPMENT</sub>
-<h3>CatalogLink</h3>
-<p>Exploring how to recognize the same product across messy supplier catalogs and explain the evidence behind each match. Starting with laptop listings and a focused, testable scope.</p>
-<p><sub>Entity resolution · Product data · Explainable matching</sub></p>
+<sub>04 / RAILWAY OPERATIONS · TEAM PROJECT</sub>
+<h3><a href="https://github.com/Gaurav-Rajawat/RailSetu">RailSetu ↗</a></h3>
+<p>A team project connecting a Flutter field app, geolocated defect reports, and an operations dashboard. Supports railway maintenance reporting and coordination through FastAPI and PostgreSQL.</p>
+<p><sub>Flutter · React · FastAPI · PostgreSQL</sub></p>
 </td>
 </tr>
 </table>

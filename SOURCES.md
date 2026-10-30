@@ -12,7 +12,7 @@ The visual identity, SVG header/footer, activity-card renderer, and profile text
 - [yoshi389111](https://github.com/yoshi389111) — inspiration for original SVG branding and contribution visualizations.
 - [elangosundar/awesome-README-templates](https://github.com/elangosundar/awesome-README-templates) — layout references.
 
-The project descriptions were checked against the current public READMEs for [Research Agents](https://github.com/prashant-7-8-7/research-agents), [AI Document Workspace](https://github.com/prashant-7-8-7/Macro-Project-), and [GridPulse](https://github.com/prashant-7-8-7/GridPulse). CatalogLink is identified as in development and has no unverified repository link.
+The project descriptions were checked against the current public READMEs for [Research Agents](https://github.com/prashant-7-8-7/research-agents), [AI Document Workspace](https://github.com/prashant-7-8-7/Macro-Project-), [GridPulse](https://github.com/prashant-7-8-7/GridPulse), and [RailSetu](https://github.com/Gaurav-Rajawat/RailSetu). RailSetu is explicitly credited as a team project in its owner's repository. CatalogLink is identified as in development and has no unverified repository link.
 
 ## Data & implementation
 
