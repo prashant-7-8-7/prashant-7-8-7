@@ -91,11 +91,30 @@ jobs:
           name: profile-visuals
           path: assets
 
+      - name: Version generated image URLs so refreshed calendars load
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          from pathlib import Path
+          import re
+          readme = Path('README.md')
+          content = readme.read_text(encoding='utf-8')
+          names = ['activity-dark.svg', 'activity-light.svg', 'contributions-3d-dark.svg', 'contributions-3d-light.svg']
+          for name in names:
+              digest = hashlib.sha256((Path('assets') / name).read_bytes()).hexdigest()[:16]
+              pattern = rf'(assets/{re.escape(name)})(?:\?v=[0-9a-f]+)?(?=")'
+              content, count = re.subn(pattern, lambda match: f'{match[1]}?v={digest}', content)
+              if not count:
+                  raise ValueError(f'No README image reference found for {name}')
+          readme.write_text(content, encoding='utf-8')
+          print('Updated generated image URLs to match their content.')
+          PY
+
       - name: Commit only changed images
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- assets/activity-dark.svg assets/activity-light.svg assets/contributions-3d-dark.svg assets/contributions-3d-light.svg
+          git add -- README.md assets/activity-dark.svg assets/activity-light.svg assets/contributions-3d-dark.svg assets/contributions-3d-light.svg
           git rm --ignore-unmatch assets/snake-dark.svg assets/snake-light.svg
           if git diff --cached --quiet; then
             exit 0
