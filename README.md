@@ -153,17 +153,17 @@ My aim is to make small, useful systems that I can run, inspect, and improve. I'
 ## GitHub activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg" />
-  <img src="assets/activity-dark.svg" alt="GitHub contribution summary, generated from my actual contribution calendar. The image states its update date." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg?v=55d677ed8a34b43a" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg?v=b7c5453828c2a9e4" />
+  <img src="assets/activity-dark.svg?v=55d677ed8a34b43a" alt="GitHub contribution summary, generated from my actual contribution calendar. The image states its update date." width="100%" />
 </picture>
 
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-3d-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/contributions-3d-light.svg" />
-  <img src="assets/contributions-3d-dark.svg" alt="My real GitHub contribution calendar in 3D, with animated growing columns, contribution breakdown, and repository language distribution." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-3d-dark.svg?v=c9f5b2337e62412c" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/contributions-3d-light.svg?v=5b78a67d503a3c11" />
+  <img src="assets/contributions-3d-dark.svg?v=c9f5b2337e62412c" alt="My real GitHub contribution calendar in 3D, with animated growing columns, contribution breakdown, and repository language distribution." width="100%" />
 </picture>
 
 <p align="center"><sub>Real contribution data · generated with <a href="https://github.com/yoshi389111/github-profile-3d-contrib">Yoshi's 3D Contrib</a> · <a href="PROFILE_GUIDE.md#activity-refresh">refresh details</a></sub></p>
