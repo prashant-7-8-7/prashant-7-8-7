@@ -153,17 +153,17 @@ My aim is to make small, useful systems that I can run, inspect, and improve. I'
 ## GitHub activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg?v=3837323391298499" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg?v=afcd64ead9b281ef" />
-  <img src="assets/activity-dark.svg?v=3837323391298499" alt="GitHub contribution summary, generated from my actual contribution calendar. The image states its update date." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg?v=9a72788c7cc6a644" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg?v=0f245562020c3b0c" />
+  <img src="assets/activity-dark.svg?v=9a72788c7cc6a644" alt="GitHub contribution summary, generated from my actual contribution calendar. The image states its update date." width="100%" />
 </picture>
 
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-3d-dark.svg?v=b471cff1527ab9f9" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/contributions-3d-light.svg?v=e5fbe9de27e65137" />
-  <img src="assets/contributions-3d-dark.svg?v=b471cff1527ab9f9" alt="My real GitHub contribution calendar in 3D, with animated growing columns, contribution breakdown, and repository language distribution." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-3d-dark.svg?v=05ae645be2522114" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/contributions-3d-light.svg?v=72ef68f4c1d9f62d" />
+  <img src="assets/contributions-3d-dark.svg?v=05ae645be2522114" alt="My real GitHub contribution calendar in 3D, with animated growing columns, contribution breakdown, and repository language distribution." width="100%" />
 </picture>
 
 <p align="center"><sub>Real contribution data · generated with <a href="https://github.com/yoshi389111/github-profile-3d-contrib">Yoshi's 3D Contrib</a> · <a href="PROFILE_GUIDE.md#activity-refresh">refresh details</a></sub></p>
