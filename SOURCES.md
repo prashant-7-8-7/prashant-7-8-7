@@ -17,7 +17,7 @@ The visual identity, SVG header/footer, typing ribbon, contact buttons, technolo
 - [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme) — discoverable profile sections and expandable details.
 - [Simple Icons](https://github.com/simple-icons/simple-icons) — technology, DEV Community, and Gmail artwork under [CC0-1.0](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md). The LinkedIn button uses a typographic mark because LinkedIn is absent from the current icon set. The checked-in `scripts/icon_sources.json` makes the badges reproducible without a hosted image service.
 
-The project descriptions were checked against the current public READMEs for [Research Agents](https://github.com/prashant-7-8-7/research-agents), [AI Document Workspace](https://github.com/prashant-7-8-7/Macro-Project-), [GridPulse](https://github.com/prashant-7-8-7/GridPulse), and [RailSetu](https://github.com/Gaurav-Rajawat/RailSetu). RailSetu is explicitly credited as a team project in its owner's repository. CatalogLink is identified as in development and has no unverified repository link.
+The project descriptions were checked against the current public READMEs for [Research Agents](https://github.com/prashant-7-8-7/research-agents), [AI Document Workspace](https://github.com/prashant-7-8-7/Macro-Project-), [GridPulse](https://github.com/prashant-7-8-7/GridPulse), and [RailSetu](https://github.com/Gaurav-Rajawat/RailSetu). RailSetu is explicitly credited as a team project in its owner's repository.
 
 ## Data & implementation
 
