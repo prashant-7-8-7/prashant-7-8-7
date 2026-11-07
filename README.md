@@ -46,8 +46,8 @@ My current interests are **trustworthy AI, retrieval systems, and applied machin
 <table>
 <tr>
 <td width="34%" valign="top">
-<strong>🔭 Building</strong>
-<p><b>CatalogLink</b><br />Explainable product matching across supplier catalogs, starting with laptops.</p>
+<strong>🔭 Focus</strong>
+<p><b>Practical AI systems</b><br />Retrieval, document intelligence, and reliable model evaluation.</p>
 </td>
 <td width="33%" valign="top">
 <strong>🌱 Learning</strong>
