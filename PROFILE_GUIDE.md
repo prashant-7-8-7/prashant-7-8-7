@@ -8,7 +8,6 @@ GitHub displays the root `README.md` of a **public** repository named exactly **
 
 - Edit `README.md` for your introduction, project descriptions, tools, and links.
 - Edit `scripts/build_brand.py` for the banner/footer text, palette, or animation. Run `python scripts/build_brand.py` to regenerate the branding. Existing live activity images are preserved.
-- Add a verified CatalogLink repository link once it is public. The current profile intentionally labels it as in development.
 - LinkedIn, DEV, and the email address in `README.md` were supplied for public display. Edit their `<a href="...">` destinations in the top contact row and the final contact section when needed.
 - Run `python scripts/enhance_profile.py` to rebuild the self-hosted social buttons, technology badges, and typing ribbon. The artwork sources are checked into `scripts/icon_sources.json` under CC0-1.0.
 - A Dribbble link must point to the public username page. Do not use `/account`, which opens private settings.
