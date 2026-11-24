@@ -153,17 +153,17 @@ My aim is to make small, useful systems that I can run, inspect, and improve. I'
 ## GitHub activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/activity-dark-8825274d00fe85d2.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/generated/activity-light-70f263c44da071e6.svg" />
-  <img src="assets/generated/activity-dark-8825274d00fe85d2.svg" alt="GitHub contribution summary, generated from my actual contribution calendar. The image states its update date." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/activity-dark-f7bb66c2f63ed13d.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/generated/activity-light-10333cbe69a1a014.svg" />
+  <img src="assets/generated/activity-dark-f7bb66c2f63ed13d.svg" alt="GitHub contribution summary, generated from my actual contribution calendar. The image states its update date." width="100%" />
 </picture>
 
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/contributions-3d-dark-3fc887be2c2bd0b0.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/generated/contributions-3d-light-57bd76eb921e52be.svg" />
-  <img src="assets/generated/contributions-3d-dark-3fc887be2c2bd0b0.svg" alt="My real GitHub contribution calendar in 3D, with animated growing columns, contribution breakdown, and repository language distribution." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/contributions-3d-dark-c225b670d0bfa257.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/generated/contributions-3d-light-c45e88f6260d732f.svg" />
+  <img src="assets/generated/contributions-3d-dark-c225b670d0bfa257.svg" alt="My real GitHub contribution calendar in 3D, with animated growing columns, contribution breakdown, and repository language distribution." width="100%" />
 </picture>
 
 <p align="center"><sub>Real contribution data · generated with <a href="https://github.com/yoshi389111/github-profile-3d-contrib">Yoshi's 3D Contrib</a> · <a href="PROFILE_GUIDE.md#activity-refresh">refresh details</a></sub></p>
